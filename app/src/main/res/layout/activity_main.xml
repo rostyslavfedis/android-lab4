@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper">
+
+
+    <ImageView
+        android:id="@+id/android_house_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coding" />
+    <TextView
+        android:id="@+id/status_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Який курс програмування ви бажаєте?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+    <TextView
+        android:id="@+id/status_text_viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Ваше ім'я"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Виберіть мову програмування:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+    <CheckBox
+        android:id="@+id/checkBoxOne"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:text="JavaScript" />
+    <CheckBox
+        android:id="@+id/checkBoxTwo"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:text="C++" />
+    <CheckBox
+        android:id="@+id/checkBoxThree"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:text="Python" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Виберіть вид курсу:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+    <CheckBox
+        android:id="@+id/checkBoxFour"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:text="Денний" />
+    <CheckBox
+        android:id="@+id/checkBoxFive"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:text="Вечірній" />
+    <CheckBox
+        android:id="@+id/checkBoxSix"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:text="Фулл-дей" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="house"
+        android:textStyle="bold"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Згенерувати" />
+
+</LinearLayout>
+</ScrollView>
